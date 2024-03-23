@@ -1,15 +1,20 @@
 {
-  "name": "goit-node-cli",
-  "version": "1.0.0",
-  "description": "- Створи репозиторій з назвою `goit-node-cli`, склонуй та ініціалізуй в ньому проєкт за допомогою команди npm init. Встанови як залежність проєкту пакет [commander](https://www.npmjs.com/package/commander)\r - В корінь проєкту помісти файли з папки [src](./src)",
-  "main": "index.js",
+  "name": "simple-express",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www",
+    "start:dev": "nodemon ./bin/www"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "commander": "^12.0.0"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
